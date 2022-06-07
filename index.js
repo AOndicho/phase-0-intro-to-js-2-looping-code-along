@@ -1,34 +1,23 @@
 // Code your solutions in this file
-for (let age = 30; age < 40; age++) {
-    console.log(`I'm ${age} years old. Happy birthday to me!`);
-    // debugger;
-  }
+const array=[1,2,3,4,5]
 
-  const gifts = ["teddy bear", "drone", "doll"];
-
-function wrapGifts(gifts) {
-  for (let i = 0; i < gifts.length; i++) {
-    console.log(`Wrapped ${gifts[i]} and added a bow!`);
-    // debugger;
-  }
-
-  return gifts;
+let students=[{
+  name:'John Doe',
+  class:'coffee takers',
+  category: 'self sponsored'
+},
+{
+  name:'Omar Mahat',
+  class:'coffee takers',
+  category: 'self sponsored'
+},
+{
+  name:'Hamida Mstafa',
+  class:'coffee takers',
+  category: 'Access student'
 }
+]
 
-wrapGifts(gifts);
-
-function writeCards(names,event){
-    let messages=[]
-    for (let name of names){
-        messages.push(`Thank you, ${name}, for the wonderful ${event} gift!`)
-    }
-
-    return messages
-}
-
-function countDown(number){
-    while (number>=0){
-        console.log(number)
-        number--;
-    }
+for(let student of students){
+  console.log(`Student Name:${student.name}, Class:${student.class}`)
 }
